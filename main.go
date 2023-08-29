@@ -13,10 +13,13 @@ var sign string
 func main() {
 	count := 1
 	place := 0
-	for functions.Matrix.IsOver() {
+	for {
 		screen.Clear()
 		screen.MoveTopLeft()
 		functions.Matrix.Prnt()
+		if !functions.Matrix.IsOver() {
+			break
+		}
 		if !functions.Matrix.IsFull() {
 			fmt.Println("\nDraw!")
 			break
@@ -65,7 +68,7 @@ func main() {
 			}
 		}
 		functions.Matrix[x][y] = sign
-		functions.Matrix.Prnt()
+		//functions.Matrix.Prnt()
 		count++
 	}
 }
