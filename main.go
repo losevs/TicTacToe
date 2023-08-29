@@ -21,7 +21,7 @@ func main() {
 			break
 		}
 		if !functions.Matrix.IsFull() {
-			fmt.Println("\nDraw!")
+			fmt.Println(color.GreenString("Draw!"))
 			break
 		}
 		if count%2 != 0 {

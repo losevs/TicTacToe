@@ -32,54 +32,54 @@ func (mat Matr) IsOver() bool {
 	switch {
 	//horizontal
 	case mat[0][0] == mat[0][1] && mat[0][1] == mat[0][2] && mat[0][2] == "X":
-		fmt.Println("X won!")
+		fmt.Println(color.RedString("X won!"))
 		return false
 	case mat[0][0] == mat[0][1] && mat[0][1] == mat[0][2] && mat[0][2] == "O":
-		fmt.Println("O won!")
+		fmt.Println(color.BlueString("O won!"))
 		return false
 	case mat[1][0] == mat[1][1] && mat[1][1] == mat[1][2] && mat[1][2] == "X":
-		fmt.Println("X won!")
+		fmt.Println(color.RedString("X won!"))
 		return false
 	case mat[1][0] == mat[1][1] && mat[1][1] == mat[1][2] && mat[1][2] == "O":
-		fmt.Println("O won!")
+		fmt.Println(color.BlueString("O won!"))
 		return false
 	case mat[2][0] == mat[2][1] && mat[2][1] == mat[2][2] && mat[2][2] == "X":
-		fmt.Println("X won!")
+		fmt.Println(color.RedString("X won!"))
 		return false
 	case mat[2][0] == mat[2][1] && mat[2][1] == mat[2][2] && mat[2][2] == "O":
-		fmt.Println("O won!")
+		fmt.Println(color.BlueString("O won!"))
 		return false
 		//vertical
 	case mat[0][0] == mat[1][0] && mat[1][0] == mat[2][0] && mat[2][0] == "X":
-		fmt.Println("X won!")
+		fmt.Println(color.RedString("X won!"))
 		return false
 	case mat[0][0] == mat[1][0] && mat[1][0] == mat[2][0] && mat[2][0] == "O":
-		fmt.Println("O won!")
+		fmt.Println(color.BlueString("O won!"))
 		return false
 	case mat[0][1] == mat[1][1] && mat[1][1] == mat[2][1] && mat[2][1] == "X":
-		fmt.Println("X won!")
+		fmt.Println(color.RedString("X won!"))
 		return false
 	case mat[0][1] == mat[1][1] && mat[1][1] == mat[2][1] && mat[2][1] == "O":
-		fmt.Println("O won!")
+		fmt.Println(color.BlueString("O won!"))
 		return false
 	case mat[0][2] == mat[1][2] && mat[1][2] == mat[2][2] && mat[2][2] == "X":
-		fmt.Println("X won!")
+		fmt.Println(color.RedString("X won!"))
 		return false
 	case mat[0][2] == mat[1][2] && mat[1][2] == mat[2][2] && mat[2][2] == "O":
-		fmt.Println("O won!")
+		fmt.Println(color.BlueString("O won!"))
 		return false
 		//diagonal
 	case mat[0][0] == mat[1][1] && mat[1][1] == mat[2][2] && mat[2][2] == "X":
-		fmt.Println("X won!")
+		fmt.Println(color.RedString("X won!"))
 		return false
 	case mat[0][0] == mat[1][1] && mat[1][1] == mat[2][2] && mat[2][2] == "O":
-		fmt.Println("O won!")
+		fmt.Println(color.BlueString("O won!"))
 		return false
 	case mat[0][2] == mat[1][1] && mat[1][1] == mat[2][0] && mat[2][0] == "X":
-		fmt.Println("X won!")
+		fmt.Println(color.RedString("X won!"))
 		return false
 	case mat[0][2] == mat[1][1] && mat[1][1] == mat[2][0] && mat[2][0] == "O":
-		fmt.Println("O won!")
+		fmt.Println(color.BlueString("O won!"))
 		return false
 	}
 	return true
