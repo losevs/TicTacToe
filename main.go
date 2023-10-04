@@ -21,10 +21,12 @@ endless:
 			screen.MoveTopLeft()
 			functions.Matrix.Prnt()
 			if !functions.Matrix.IsOver() {
+				functions.PrintScore()
 				break
 			}
 			if !functions.Matrix.IsFull() {
 				fmt.Println(color.GreenString("Draw!"))
+				functions.PrintScore()
 				break
 			}
 			if count%2 != 0 {
@@ -79,6 +81,7 @@ endless:
 		fmt.Scan(&answer)
 		switch answer {
 		case "Yes":
+		case ".":
 		default:
 			break endless
 		}
